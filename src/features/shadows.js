@@ -77,7 +77,7 @@ export const shadowSlice = createSlice({
             type: "range",
             minMax: [0, 250],
           },
-          {
+            {
             inputNumber: 4,
             name: "Spread radius",
             value: -3,
