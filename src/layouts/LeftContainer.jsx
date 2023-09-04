@@ -30,7 +30,7 @@ export default function LeftContainer() {
         ))}
       </div>
       {/* Peut être style à prévoir sur la div ci-dessous */}
-      <div>
+      <div className="h-full overflow-auto">
             {tabsList[tabs].component}
       </div>
     </div>
