@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import chevron from "../../assets/chevron.svg";
 import ShadowColorPicker from "./ShadowColorPicker";
 import ShadowRange from "./ShadowRange";
+import ShadowCheckbox from "./ShadowCheckbox";
 
 export default function Shadow({ panelNumber, shadow }) {
   const [toggleShadow, setToggleShadow] = useState(false);
@@ -38,8 +39,8 @@ export default function Shadow({ panelNumber, shadow }) {
       {toggleShadow && (
         <>
           <div className="flex items-end px-6 py-4">
-            {/* <Checkbox /> */}
-            {/* <Checkbox /> */}
+            <ShadowCheckbox name={"active"} shadowID={shadow.id} />
+            <ShadowCheckbox name={"inset"} shadowID={shadow.id} />
             <button className="px-3 py-1 ml-auto text-sm text-white bg-red-600 rounded hover:bg-red-700">
               Remove
             </button>
