@@ -25,7 +25,7 @@ const initialState = [
   {
     inputNumber: 4,
     name: "Background color",
-    value: "#fff",
+    value: "#ffffff",
     type: "color",
   },
 ];
